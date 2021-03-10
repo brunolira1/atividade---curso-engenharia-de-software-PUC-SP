@@ -1,0 +1,36 @@
+CDIA-MA3, CDIA-ES-K-1-05, 10/03/2021
+Bruno Hora Alves Lira
+RA00282593
+
+1. Análise:
+O objetivo é elaborar um código em python que retorne o maior número de uma
+lista homogênea composta por números ou por strings, porém, sem usar a
+variável m (variável que assume um valor inicial igual a zero e  que depois
+é comparada a cada valor da lista, quando comparada a um número ou string
+maior que seu valor atual, ela assume o valor deste número ou string).
+2. Desenho
+Para alcançar nosso objetivo, usaremos um comando desprovido da lista de
+comandos existentes na própria linguagem python: o comando max()
+Então dada uma lista, passamos o valor desta lista para uma variável, e em
+seguida usamos o comando max() e botamos a variável que carrega a lista entre
+os parênteses. Devemos colocar o comando max() dentro do comando print() para
+o resultado ser retornado no output do programa
+3. Implementação
+O nosso código ficará da seguinte forma:
+k = [2, 3, 7, 8, 1, 6, 5, 4]
+print(max(k))
+O programa retornará o número 8 (maior número presente nesta lista k)
+4. Teste
+Essa certamente é a melhor solução para nosso problema pois a função realizada
+pelo comando max() é exatamente o que precisamos para atender a exigência que
+nos foi passada: retornar o maior número ou string de uma lista sem usar a
+variável m.
+Além disso, esta resolução nos proporcionou um código bem simples e limpo, de
+apenas duas linhas, fácil para qualquer pessoa (até mesmo quem não pertence a
+esta área de ensino) entender.
+Esta resolução funciona para qualquer lista homogênea(apenas com números ou
+apenas com strings) possível. Por exemplo: se a nossa lista for:
+[-3, -7, 4, 6, 1], o valor retornado será 6. se nossa lista for:
+[4.5, 4.7, 4.3, 4.6], o valor retornado será 4.7. O problema apresentado teria
+uma resolução inviável em uma lista heterogênea(com números e strings),
+justamente por ser impossível comparar valores de dois tipos de dados diferentes.
